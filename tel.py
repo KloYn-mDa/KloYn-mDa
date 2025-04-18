@@ -2,7 +2,7 @@ import json
 
 import telebot
 
-TOKEN = "7018175415:AAEo2ulVJXZplgYa-qanDP0TH-yQ_YsN2PM"
+TOKEN = "..."
 
 bot = telebot.TeleBot(TOKEN)
 
