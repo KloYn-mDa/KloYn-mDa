@@ -19,7 +19,9 @@ def handle_start(message):
 @bot.message_handler(commands=["learn"])
 def handle_learn(message):
     user_words = user_data.get(str(message.chat.id), {})
+    
     words_number = int(message.text.split()[1])
+    
     ask_translation(message.chat.id, user_words, words_number)
 
 def ask_translation(chat_id, user_words, words_left):
